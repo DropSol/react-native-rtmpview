@@ -95,7 +95,7 @@ class RtmpView extends Component {
   render() {
     return <RNRtmpView
       ref={RCT_VIDEO_REF}
-      scalingMode='MovieScalingModeAspectFill'
+      scalingMode={this.props.scalingMode}
       shouldMute={false}
       playOnResume={true}
       pauseOnStop={true}
